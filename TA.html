@@ -1,0 +1,80 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="utf-8" />
+	<title>Computer Science Department</title>
+    <link rel="stylesheet" href="styles/normalize.css">
+    <link rel="stylesheet" href="styles/TA.css" >
+    <script>
+        function showLabel() {
+          var label = document.getElementById('button');
+          label.style.display = 'block';
+        }
+      </script>
+   
+</head>
+<header >
+    <img src="images/logo.png">
+    <h2>Computer Science Department</h2>
+    <nav id="nav_menu">
+        <ul>
+        <span><li><a href="#">Home</a></li>
+            <li><a href="./description.html">Program Description</a></li>
+            <li><a href="./TA.html" class="current">TA Application</a></li>
+            <li><a href="./GPA.html">GPA Calculator </a></li>
+            </span>
+        </ul>  
+    </nav>
+</header> 
+<body>
+<main>
+        <form name="myform" action="survey_data.html" method="get">
+            <h1>Teaching Assistant Application Form</h1>
+            <h2>Applicant information</h2>
+            
+            <label for="firstname">First name:</label>
+            <input type="text" name="firstname" id="firstname" autofocus required><br>
+        
+            <label for="lastname">Last name:</label>
+            <input type="text" name="lastname" id="lastname" required><br>
+        
+            <label for="studentid">Student ID:</label>
+            <input type="text" name="studentid" id="studentid" ><br>
+
+
+            <label for="gender">Gender:</label>
+            <p>M<input type="checkbox" name="gender" id="male" value="male">
+            F<input type="checkbox" name="gender" id="female" value="female"></p>
+       
+            
+            <label for="gpa">GPA:</label>
+            <input type="text" name="gpa" id="gpa" required><br>
+        
+            <label for="comments">Comments: </label>
+          
+            <textarea id="comments" name="comments" rows="5" cols="20" required></textarea>
+           
+        
+            <h2 id="sucess">Thank you for completing the application!</h2>
+          
+
+            <input div class="buttons" type="submit" name="button" id="button" value="Submit">
+            <input div class="buttons" type="reset" name="reset" id="reset">
+          
+        </form> 
+      <br>
+    </main>
+
+</body>
+<footer>
+    <div><p>7400 East Drive</p>   
+    <p>Montgomery, AL 36117</p>
+    <p>Local: 334-244-3000</p>
+    <p>Toll-Free: 800-227-2649</p></div>
+    <p id="name">&copy; 2023 Sameer kumar Shaga</p>
+    <img id="fb"  src="images/facebook-social-network-logo.png" width="30px">
+    <img  src="images/pinterest-logo.png" width="30px">
+    <img id="twt"  src="images/twt.jpeg" width="33px">
+
+</footer>
+</html>

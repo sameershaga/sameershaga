@@ -10,7 +10,7 @@ html {
 }
 
 body {
-    font-family: Verdana, Arial, Helvetica, sans-serif;
+ 
     width: 90%;
     max-width: 849.5px;
     margin: 0 auto;
@@ -21,13 +21,14 @@ body {
 
 section {
     column-count: 2;
-    column-gap: 40px;
+    column-gap: 10px;
     column-rule: 4px double rgb(250, 73, 24);
 }
 
 section div {
     font-size: 88%;
     border-top: 2px double black;
+    
 }
 
 #bottom {
@@ -38,6 +39,8 @@ section div h2,
 section div p {
     margin-left: 10px;
     margin-right: 10px;
+    margin-top: 5px;
+    margin-bottom: 5px;
 }
 
 header {
@@ -88,6 +91,14 @@ header nav ul li a {
     color: white;
 }
 
+#nav_menu ul li a.current {
+	color: orange;
+}
+#nav_menu ul li a:hover, #nav_menu ul li a:focus {
+	background-color: gray;
+}
+
+
 /* Footer */
 footer div {
     margin-top: 10px;
@@ -119,35 +130,4 @@ footer {
     background-color: rgb(250, 73, 24);
 }
 
-/* Media Queries */
-@media only screen and (max-width: 800px) {
 
-	body {
-		font-size: 90%;
-		box-shadow: none;
-	}
-}
-
-@media only screen and (max-width: 767px) {
-	#nav_menu {
-		display: none;
-	}
-	#mobile_menu {
-		display: block;
-	}
-	header h2 {
-		font-size: 200%;
-	}
-}
-
-@media only screen and (max-width: 479px) {
-	header h2 {
-		font-size: 180%;
-	}
-	header h3 {
-		font-size: 115%;
-	}
-	section h1 {
-		font-size: 130%;
-	}
-}
